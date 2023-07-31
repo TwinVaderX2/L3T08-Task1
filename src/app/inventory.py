@@ -211,7 +211,9 @@ def add_item(inventory):
 
 # ================== CREATE INVENTORY ================
 # import inventory items from external source
-source = os.path.abspath('../textfiles/inventory.txt')
+absolute_path = os.path.dirname(__file__)
+relative_path = "../textfiles/inventory.txt"
+full_path = os.path.join(absolute_path,relative_path)
 
 def get_inventory(source):
     """
@@ -260,7 +262,7 @@ def get_inventory(source):
     
     return inventory
 
-new_inventory = get_inventory(source)
+new_inventory = get_inventory(full_path)
 
 
 # ============ Print Functions ============
