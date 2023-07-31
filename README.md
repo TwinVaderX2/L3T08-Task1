@@ -37,6 +37,12 @@ Python 3
 1. cd into directory ./src/app
 2. run using command python3 inventory.py
 
+### Using docker
+1. cd into directory ./ (Root)
+2. run Docker Desktop
+3. build image using command (docker build -t [image_name] .)
+4. run image using command (docker run -ti [image_name])
+
 ## USER GUIDE
 The user is presented with a menu of options to choose from. Enter the corresponding number for the task you wish to perform.
 
